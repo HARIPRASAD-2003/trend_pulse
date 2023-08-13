@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import LoadingScreen from './components/LoadingScreen';
+// import Home from './components/Home';
+import { BrowserRouter as Router } from 'react-router-dom';
+// import ContentDetails from './components/ContentDetails';
+import Routing from './Routing';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay (e.g., API calls, data fetching)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Set the time as needed
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {isLoading ? <LoadingScreen /> : null}
+      {/* <Home/> */}
+      <Router>
+        <Routing/>
+      </Router>
     </div>
   );
 }

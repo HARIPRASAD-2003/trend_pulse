@@ -1,0 +1,59 @@
+/* ContentDetails.css */
+
+.content-details {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #1f1f1f; /* Background color from Home.css */
+    color: #ffffff; /* Text color from Home.css */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-details-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .content-details-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-details-info {
+    flex: 1;
+  }
+  
+  .content-details-info p {
+    margin: 10px 0;
+  }
+  
+  .content-details-info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .content-details-info ul li {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .trailer-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  }
+  
+  .trailer-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Add any additional styles you need */
+  
