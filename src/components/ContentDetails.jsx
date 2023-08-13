@@ -54,7 +54,7 @@ const ContentDetails = () => {
           <p><strong>Vote Average:</strong> {contentDetails.vote_average}</p>
           <div>
             <strong>Available on Streaming Platforms:</strong>
-            <ul className="platform-list">
+            <ul className="platform-list" style={{display: 'flex', justifyContent: "space-evenly"}}>
               {streamingPlatforms.map(platform => (
                 <li key={platform.provider_id}>
                   <a
