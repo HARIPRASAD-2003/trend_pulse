@@ -1,5 +1,5 @@
 // src/components/HomePage.js
-import React from 'react';
+import React, { useState } from 'react';
 // import axios from 'axios';
 import './Home.css';
 // import { urlencoded } from 'express';
@@ -11,7 +11,8 @@ const Home = () => {
   // const ACCESS_KEY = '1yaEJjHcZ80AGbnprPy3s96jQe5weRwXtBk_hzJWaQE';
   // const searchQuery = 'stranger things'; // Example search query
   // const [content, setContent] = useState([]);
-  const userInterests = 'action, adventure';
+  const [userInterests, setUserInterests] = useState(['action', 'adventure']);
+  // const [userSelectedLanguages, setUserSelectedLanguages] = useState('EN');
 
 
   // axios.get(`https://api.unsplash.com/search/photos?query=${searchQuery}&client_id=${ACCESS_KEY}`)
@@ -32,7 +33,7 @@ const Home = () => {
       <main className="main-content">
       <section className="category-section">
           {/* <h2 className="category-title">Popular Now</h2> */}
-          <MovieRecommendations userInterest={userInterests}/>
+          <MovieRecommendations userInterest={userInterests} setUserInterests={setUserInterests}/>
       </section>
       <section className="category-section">
           {/* <h2 className="category-title">Popular Now</h2> */}

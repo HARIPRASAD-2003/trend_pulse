@@ -39,7 +39,7 @@ const SeriesRecommendations = ({ userInterest }) => {
       <h2>Recommended TV Series</h2>
       <div className="content-list" ref={contentListSeriesRef}>
         {recommendedSeries.map(series => (
-            <Link to={`/details/${series.id}`}>
+            <Link to={`/series/details/${series.id}`}>
           <div key={series.id} className="content-item" >
             <img src={`https://image.tmdb.org/t/p/w500/${series.poster_path}`} alt={series.name} />
             <h4>{series.name}</h4>

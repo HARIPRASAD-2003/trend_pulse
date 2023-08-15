@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Home.css'
 import { Link } from 'react-router-dom';
 
-const MovieRecommendations = ({ userInterest }) => {
+const MovieRecommendations = ({ userInterest, setUserInterests }) => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
   const API_KEY = '0d6f8da79a1d1e3e89c45646b16e7d4b';
   const userInterests = userInterest; // Example user interests (comma-separated genres)
@@ -40,7 +40,7 @@ console.log(recommendedMovies)
         <h2>Recommended Movies</h2>
   <div className="content-list" ref={contentListRef}>
     {recommendedMovies.map(movie => (
-        <Link to={`/details/${movie.id}`}>
+        <Link to={`/movies/details/${movie.id}`}>
       <div key={movie.id} className="content-item" >
         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
         <h4>{movie.title}</h4>
