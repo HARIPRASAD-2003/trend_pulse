@@ -15,6 +15,7 @@ export const MovieContentDetails = () => {
   const [trailerKey, setTrailerKey] = useState(null);
   const [userCountry, setUserCountry] = useState('IN');
   const API_KEY = '0d6f8da79a1d1e3e89c45646b16e7d4b';
+  setUserCountry('IN');
 
   
   useEffect(() => {
