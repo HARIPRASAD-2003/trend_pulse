@@ -11,7 +11,7 @@ const Home = () => {
   // const ACCESS_KEY = '1yaEJjHcZ80AGbnprPy3s96jQe5weRwXtBk_hzJWaQE';
   // const searchQuery = 'stranger things'; // Example search query
   // const [content, setContent] = useState([]);
-  const [userInterests, setUserInterests] = useState(['action', 'adventure']);
+  const [userInterests, setUserInterests] = useState(['action', 'adventure', 'comedy']);
   // const [userSelectedLanguages, setUserSelectedLanguages] = useState('EN');
 
 
