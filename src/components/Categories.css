@@ -1,0 +1,60 @@
+/* Categories.css */
+.categoryPage {
+    background-color: #1f1f1f; /* Dark background color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make it take the full viewport height */
+}
+
+.categories-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ffffff; /* Text color from the project theme */
+    max-width: fit-content;
+}
+
+.categories-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display in five columns */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.category-item {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ffffff; /* Text color from the project theme */
+    padding: 30px 20px;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.category-item:hover {
+    background-color: #c1cbd6; /* Highlight color from the project theme */
+    color: #1f1f1f;
+}
+
+.selected {
+    background-color: #ff0000; /* Selected color from the project theme */
+    color: #ffffff; /* Text color for selected category */
+}
+
+.save-button {
+    background-color: #007bff; /* Button color from the project theme */
+    color: #ffffff; /* Text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #0056b3; /* Button hover color from the project theme */
+}

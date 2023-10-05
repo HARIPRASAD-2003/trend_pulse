@@ -4,6 +4,7 @@ import {MovieContentDetails, SeriesContentDetails} from './components/ContentDet
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Categories from './components/Categories';
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
         <Route path="/series/details/:contentId" Component={SeriesContentDetails} />
         <Route path="/login" Component={Login}/>
         <Route path="/signup" Component={Signup}/>
+        <Route path="/category" Component={Categories}/>
     </Routes>
   )
 }
