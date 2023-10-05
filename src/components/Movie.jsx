@@ -10,13 +10,14 @@ const MovieRecommendations = ({ userInterest, setUserInterests }) => {
   const contentListRef = useRef(null);
   const selectedLanguage = 'en'
 //   const navigate = useNavigate();
-console.log(recommendedMovies)
+console.log()
 
   useEffect(() => {
     const fetchRecommendedMovies = async () => {
       try {
         const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${userInterests}&language=${selectedLanguage}`);
         setRecommendedMovies(response.data.results);
+        console.log(userInterests)
       } catch (error) {
         console.error('Error fetching movies:', error);
       }

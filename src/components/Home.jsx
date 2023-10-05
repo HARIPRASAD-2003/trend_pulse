@@ -11,7 +11,26 @@ const Home = () => {
   // const ACCESS_KEY = '1yaEJjHcZ80AGbnprPy3s96jQe5weRwXtBk_hzJWaQE';
   // const searchQuery = 'stranger things'; // Example search query
   // const [content, setContent] = useState([]);
-  const [userInterests, setUserInterests] = useState(['action', 'adventure', 'comedy']);
+  const initialSelection = {
+    Action: false,
+    Adventure: false,
+    Animation: false,
+    Comedy: false,
+    Crime: false,
+    Drama: false,
+    Fantasy: false,
+    Horror: false,
+    Mystery: false,
+    Romance: false,
+    'Sci-Fi': false,
+    Thriller: false,
+    Western: false,
+    Documentary: false,
+};
+const categoryList = Object.keys(initialSelection);
+  console.log(categoryList)
+
+  const [userInterests, setUserInterests] = useState(['romance', 'thriller']);
   // const [userSelectedLanguages, setUserSelectedLanguages] = useState('EN');
 
 
