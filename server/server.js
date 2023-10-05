@@ -18,6 +18,4 @@ mongoose.connect(connection_url, {useNewUrlParser: true, useUnifiedTopology: tru
     res.send('Hello, World! MongoDB is connected.');
   });
 
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
+  
